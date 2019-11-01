@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script>
+                const recognition = new webkitSpeechRecognition();
+                
+                recognition.interimResults = true;
+                
+                recognition.onresult = (event) => {
+                    for (let i = event.resultIndex; i < event.results.length; i++) {
+                    let transc = '';
+                    if(event.results[i].isFinal){
+                            transc += event.results[i][0].transcript;
+                            window.newTranscript(transc)
+                        }
+                    }
+                }
+                recognition.onstart = (event) => window.newStart(event)
+                recognition.onerror = (event) => window.newError(event.error)
+                recognition.onend = (event) => window.newEnd(event)
+                
+                function startRecording(continuous){
+                    recognition.continuous = continuous;
+                    recognition.start()
+                }
+
+                window.newReady()
+        </script>
+    </head>
+</html>
+
