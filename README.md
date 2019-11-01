@@ -3,8 +3,8 @@
 WSRN communicate with a new browser instance over puppeteer core module, it uses default microphone settings for input.
 
 * [x] Windows
-* [] Linux (not tested)
-* [] MacOS (not tested)
+* [ ] Linux (not tested)
+* [ ] MacOS (not tested)
 
 ## API
 
