@@ -2,9 +2,9 @@
 
 WSRN communicate with a new browser instance over puppeteer core module, it uses default microphone settings for input.
 
-* [x] Windows
-* [ ] Linux (not tested)
-* [ ] MacOS (not tested)
+[x] Windows
+[x] Linux
+[ ] MacOS (not tested)
 
 ## API
 
@@ -24,3 +24,15 @@ client.on('data', (transcript) => {
   console.log(transcript);
 });
 ```
+
+Events also available:
+
+* `error` - emitted when error occur
+* `start` - when recording has started
+* `end` when recording has ended
+
+### Common Chrome paths
+
+* Windows `C:/Program Files (x86)/Google/Chrome/Application/chrome.exe`
+* Linux `/usr/bin/google-chrome-stable`
+* MacOS `/Applications/Google Chrome.app/Contents/MacOS/Google Chrome`

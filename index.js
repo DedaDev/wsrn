@@ -41,7 +41,13 @@ class Client extends EventEmiter {
       const [page] = await this.browser.pages();
       this.page = page;
 
-      await page.exposeFunction('newTranscript', (e) => this.emit('data', e));
+      await page.exposeFunction('newTranscript', (e) => {
+        /**
+       * @event Client#data
+       * @type {String}
+       */
+        this.emit('data', e)
+      });
       await page.exposeFunction('newError', (e) => this.emit('error', e));
       await page.exposeFunction('newEnd', () => this.emit('end'));
       await page.exposeFunction('newStart', () => this.emit('start'));

@@ -11,5 +11,13 @@
   "dependencies": {
     "puppeteer-core": "^2.0.0"
   },
+  "keywords": [
+    "Speech API",
+    "Web Speech API",
+    "Web Speech",
+    "Speech Node",
+    "Speech Recognition Node",
+    "Web Speech Recognition"
+  ],
   "repository": "DedaDev/wsrn"
 }
