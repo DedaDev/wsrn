@@ -25,14 +25,14 @@ client.on('data', (transcript) => {
 });
 ```
 
-Events also available:
+### Events also available
 
 * `error` - emitted when error occur
 * `start` - when recording has started
-* `end` when recording has ended
+* `end` - when recording has ended
 
 ### Common Chrome paths
 
-* Windows `C:/Program Files (x86)/Google/Chrome/Application/chrome.exe`
-* Linux `/usr/bin/google-chrome-stable`
-* MacOS `/Applications/Google Chrome.app/Contents/MacOS/Google Chrome`
+* Windows - `C:/Program Files (x86)/Google/Chrome/Application/chrome.exe`
+* Linux - `/usr/bin/google-chrome-stable`
+* MacOS - `/Applications/Google Chrome.app/Contents/MacOS/Google Chrome`

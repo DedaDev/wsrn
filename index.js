@@ -33,6 +33,8 @@ class Client extends EventEmiter {
           '--window-position=0,0',
           '--enable-speech-dispatcher', // Needed for Linux?
           '--use-fake-ui-for-media-stream', // dissable mic popup
+          '--no-first-run',
+          '--no-default-browser-check'
         ],
         executablePath: this.chromePath,
         ignoreDefaultArgs: '--mute-audio',
