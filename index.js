@@ -26,7 +26,7 @@ class Client extends EventEmiter {
   async init() {
     try {
       this.browser = await puppeteer.launch({
-        headless: false,
+        headless: true,
         args: [
           '--window-size=0,0',
           '--enable-speech-input',
