@@ -1,6 +1,6 @@
 # Web Speech Recognition in Node.js
 
-WSRN communicate with a new browser instance over puppeteer core module, it uses default microphone settings for input.
+WSRN communicate with a new browser instance over puppeteer core module, it uses default microphone settings for the input.
 
 * [x] Windows
 * [x] Linux
